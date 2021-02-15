@@ -2,107 +2,185 @@
     margin: 0;
     padding: 0;
 }
-.bloc_page{
-    font-family: 'Epilogue', sans-serif;
-    width: 1200px;
-    margin: auto;
+body{
+	font-family: 'Epilogue', sans-serif;
+	font-size: 1em;
 }
+.bloc_page{
+    
+    width: 1200px;
+    margin: auto;  
+}
+
+/**********************************************************************
+** haut de page aside et main *****************************************
+***********************************************************************/
 header{
     display: flex;
     height: 330px;
 }
+
+/********* header_aside *********/
+aside , .main_aside , .footer_aside{
+	width: 396px;
+}
 aside{
-    width: 396px;
-    background-color: rgb(254 202 7);
+    background-color: #FECA07;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 img{
-    width:230px;
-    height: 230px;
-    border: 4px solid rgba(190,55,12,0.2);
+    border: 4px solid #EBAE05;
     border-radius: 50%;
 }
+
+/********** Main_header **********/
 .main_header{
-    width: 804px;
     display: flex;
     flex-direction: column;
     justify-content: center;  
 }
 .main_header h1{
-    font-size: 65px;
+    font-size: 4em;
     font-weight: 200;
     margin-left: 85px;
 }
-.main_header h2 span
-{
-	border-bottom: 3px solid rgb(254 202 7);
+.main_header h2 span{
+	border-bottom: 3px solid #FECA07;
 }
 .main_header h2{
-    color: rgb(74 74 74);
+    color: #4A4A4A;
     margin-left: 85px;
     font-weight: bolder;
+    font-size: 2em;
 }
 .main_header h1 span{
-    color: rgb(254 202 7);
+    color: #FECA07;
     font-weight: 400;  
 }
 
+/************************************************************************
+** corps de page aside + main *******************************************
+*************************************************************************/
 .container{
     display: flex;
 }
-.main_aside{
-    width: 396px;
-    background-color: rgb(254 202 7);
+
+/********* aside *********/
+.main_aside , .footer_aside{
+    background-color: #FECA07;
     display: flex;
     flex-direction: column;
 }
-.main_container{
-    width: 804px;   
-}
-.title{
-    background-color: rgb(74 74 74);
+.title_aside{
+    background-color: #4A4A4A;
     text-align: center;
-    color: rgb(254 202 7);
-    font-weight: lighter;
+    color: #FECA07;
     padding-top: 10px;
-    padding-bottom: 5px;
-   
+    padding-bottom: 5px;  
+}
+.title_aside h1{
+	font-size: 2em;
 }
 .contact{
-    height: 400px;
     display: flex;
     flex-direction: column;
-    font-weight:500 ;
-    
+    font-weight:500;
 }
 .contact_items , .text_about , .loisir_icons{
     width: 75%;
     margin: auto;
-    color: rgb(74 74 74);
+    color: #4A4A4A;
     text-align: justify;
 }
 .contact_items{
     display: flex;
     flex-direction: column;
-    height: 70%;
-    justify-content: space-between;
-
-}
-.contact p{
-    
+    height: 300px;
+    justify-content: space-around;
+    margin: 20px auto;
+    font-size: 1.2em;
 }
 .about{
-    height: 780px;
     font-weight: 500;
 }
 .text_about{   
-    margin-top: 30px;
+    margin: 30px auto;
+    font-size: 1.2em;
 }
+
+/********** Main **********/
+.main_header , .main_container , .main_footer{
+    width: 804px;   
+}
+.section{
+    width: 80%;
+    margin: auto;
+   	padding-top: 15px;
+}
+.header_section{
+    display: flex;
+    border-bottom: 3px solid #FECA07;
+}
+.title_icon{
+    padding-right: 10px;
+}
+.title_icon i{
+    font-size: 2em;
+    color:#FECA07;
+}
+
+.title_section h1{
+	font-size: 1.7em;
+}
+.table_section{
+    margin-top: 10px;
+    padding-top: 40px;
+}
+.icon_date_info{
+    display: flex;
+    margin-bottom: 50px;
+    color:#4A4A4A;
+    justify-content: space-between;
+}
+.icon_dot, .icon_circle{
+    color: #FECA07;
+}
+.icon_dot{
+    font-size: 10px;
+}
+.date{
+    width:25%; 
+    font-weight: bolder;
+    font-size: 0.9em;
+}
+.info{
+    width: 65%;
+    text-align: justify;
+    padding-right: 5px;
+}
+.info h2{
+	font-size: 1.5em;
+}
+.info h2 , h3{
+	margin-bottom: 10px;
+}
+.sub-infos {
+    margin-bottom: 10px;
+}
+
+/**********************************************************************
+** FOOTER *************************************************************
+***********************************************************************/
+footer
+{
+	display: flex;
+}
+
+/********** footer_aside **********/
 .loisir{
-    height: 150px;  
     display: flex; 
     flex-direction: column;
 }
@@ -113,7 +191,7 @@ img{
     align-items: center;
 }
 .loisir_icons i{
-    border: 2px solid rgb(74 74 74);
+    border: 2px solid #4A4A4A;
     font-size: 30px;
     border-radius: 50%;
     width: 60px;
@@ -121,69 +199,21 @@ img{
     text-align: center;
     line-height: 60px;
 }
-.section{
-    width: 80%;
-    margin: auto;
-    margin-bottom: 20px;
-}
-.header_section{
-    display: flex;
-    justify-content: space-between;
-}
-.title_icon{
-    width: 7%;
-}
-.title_icon i{
-    font-size: 40px;
-    color:rgb(254 202 7);
-}
-.title_section{
-    width: 85%;
-}
-.tableau_section{
-    border-top: 3px solid rgb(254 202 7);
-    margin-top: 10px;
-    padding-top: 40px;
-}
-.icon_date_info{
-    display: flex;
-    margin-bottom: 50px;
-    color:rgb(74 74 74);
- 
-}
-.icon_dot, .icon_circle{
-    width: 3%;
-    color: rgb(254 202 7);
- 
-}
-.icon_dot{
-    font-size: 10px;
- 
-}
-.date{
-    width: 31%;
-    font-weight: bolder;
-    border: 1px solid black;
-}
-.info{
-    width: 66%;
-    border: 1px solid black;
-  
-}
+
+/********** main_footer *********/
 .recommandations{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 .reco{
-    padding-top: 30px;
-    width: 50%;
-    height: 110px;
-    color: rgb(74 74 74);
-    border-top: 3px solid rgb(254 202 7);
-    margin-top: 10px;
-    
+    padding-top: 20px;
+    width: 45%;
+    color: #4A4A4A;
+    margin-top: 10px; 
     display: flex;
-    flex-direction: column;   
+    flex-direction: column;
 }
 .reco h3{
     margin-bottom: 10px;
@@ -192,148 +222,125 @@ img{
     margin-bottom: 7px;
 }
 
-@media screen and (max-width: 1025px) and (min-width: 768px)
+/**********************************************************************
+** responsive tablette ************************************************
+***********************************************************************/
+@media screen and (max-width: 1024px) and (min-width: 768px)
 {
-	body{
-        max-width: 1025px;
-        font-size: 0.9em;
-        margin: 0px;
-    }
-    .bloc_page
+	.bloc_page , header , aside , .main_header , .main_container , .main_aside , .footer_aside , .main_footer , section
 	{
 		width: auto;
+		font-size: 1em;
 	}
 	header{
-        display: flex;
         flex-direction: column;
-        height: auto;
-        width:  auto;
-	}
-	aside{
-	    width: auto;
-	    background-color: rgb(254 202 7);
-	    display: flex;
-	    flex-direction: column;
-	    justify-content: center;
-	    align-items: center;
-
+        height: auto; 
 	}
 	img{
-	    width:500px;
-	    height: 500px;
-	    border: 4px solid rgba(190,55,12,0.2);
-	    border-radius: 50%;
-        margin: 30px auto;
+	    margin: 20px;
 	}
 	.main_header{
-	    width: auto;
-	    display: flex;
+	    margin: 50px auto;
+	    width: 80%;	    
+	}
+	.container{
 	    flex-direction: column;
-	    justify-content: center; 
+	}
+    footer{
+    	flex-direction: column-reverse;
+    	justify-content: space-between;
+    }
+    .loisir_icons{
+    	padding-top: 30px;
+    	padding-bottom: 30px;
+    }
+
+}
+
+/**********************************************************************
+** responsive tablette ************************************************
+***********************************************************************/
+@media screen and (max-width: 768px){
+	.bloc_page , header , aside , .main_header , .main_container , .main_aside , .footer_aside , .main_footer , section
+	{
+		width: auto;
+		font-size: 0.9em;
+	}
+
+	/*********************************** haut de page *****************/
+	header{
+        flex-direction: column;
+        height: auto; 
+	}
+
+	/********** header_aside *********/
+	img{
+	    margin: 20px;
+	}
+
+	/********** main_header **********/
+	.main_header{
 	    text-align: center;
-	    
-	    height: 300px;
-	    
+	    margin: 60px; 
 	}
 	.main_header h1{
-
-	    font-weight: 200;
 	    margin-left: 0;
 	}
 	.main_header h2{
-	    color: rgb(74 74 74);
 	    margin-left: 0;
-	    font-weight: bolder;
 	}
+
+	/*********************************** corps de page *****************/
 	.container{
-	    display: flex;
 	    flex-direction: column;
 	}
-	.main_aside
-	{
-		width: auto;
-	}
-    .title{
-        background-color: rgb(74 74 74);
-        text-align: center;
-        color: rgb(254 202 7);
-        font-weight: lighter;
-        padding-top: 10px;
-        padding-bottom: 5px;
-        font-size: 20px;
-    }
-	.main_container
-	{
-		width: auto;
-		margin-top: 50px;
-	}
-	.title_section
-	{
-		text-align: center;
-	}
 
-    }
-    .icon_date_info{
-        display: flex;
-        margin-bottom: 50px;
-        color:rgb(74 74 74);    
-    }
-	.icon_dot, .icon_circle{
-	    width: 3%;
-	    color: rgb(254 202 7);
-       
-	    margin-right: 5px;
-
-	}
-	.icon_dot{
-	    font-size: 10px;
-        
-	    margin-right: 5px;
-	}
-	.date{
-	    width: 31%;
-	    font-weight: bolder;
-	   
-	}
-    .info{
-        width: 50%;
-        
-        align-content: center;
-        width: auto;
-        text-align: justify;
-    }
-    .info h2 , h3{
-        text-align: center;
-    }
-	.contact{
-	    height: 600px;
-	    display: flex;
-	    flex-direction: column;
-	    font-weight:500 ;   
-	}
-	.contact_items{
-	    display: flex;
-	    flex-direction: column;
-	    height: 70%;
-
-	    justify-content: space-between;
-	    align-items: flex-start;
-        
-        
-	}
+	/********** aside **********/
     .items
-    {
-        
+    {  
         margin-bottom: 10px;
     }
 	.about{
-	    height: auto;
-	    font-weight: 500;
 	    margin-bottom: 50px;
 	}
     .text_about{   
         margin-top: 30px;
+        text-align: left;
+    }
+
+    /********** main **********/
+    .section{
+    	width: 85%;
+    	padding: 10px;
+    }
+    .info{
+    	text-align: left;
+    }
+    .info h2{
+    	font-size: 1.3em;
+    }
+
+	/*********************************** bas de page *********************/
+    footer{
+    	flex-direction: column-reverse;
+    	justify-content: space-between;
+    	font-size: 1.1em;
+    }
+
+    /********** footer_aside **********/
+    .footer_aside{
+    	margin-top: 10px;
+    }
+    .loisir_icons{
+    	padding-top: 30px;
+    	padding-bottom: 30px;
+    }
+    /********** main_footer **********/
+    .recommandations{
+    	flex-direction: column;
+    	width: auto;
+    }
+    .reco{
+    	width: 80%;
     }
 }
-@media screen and (max-width: 768px){
-   
