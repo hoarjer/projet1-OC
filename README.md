@@ -1,7 +1,8 @@
 # Transformer mon cv en site web à partir d'une maquette 
+[Mon cv en site web](https://hoarjer.github.io/CV-Jerome-Hoareau/)
+
 ## Compétences
 * Intégrer du contenu conformément à une maquette
-![alt text](cv_model.png)
 
 * Préparer des éléments graphiques et textuels à intégrer à une page web
 
@@ -12,3 +13,6 @@
 * Définir la structure d'une page web à partir d'une maquette
 
 * Assurer la conformité d'une page web aux standards HTML et CSS
+
+model:
+![alt text](cv_model.png)
